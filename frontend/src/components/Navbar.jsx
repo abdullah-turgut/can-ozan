@@ -36,6 +36,18 @@ export default function Navbar() {
         <p className="text-xl font-light">MENU</p>
       </div>
 
+      <nav
+        className="flex gap-x-5 text-xl font-light fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full"
+        style={{ writingMode: 'vertical-rl' }}
+        id="navbar"
+      >
+        <Link>MÜZİK</Link>
+        <Link>VİDEO</Link>
+        <Link>KONSER</Link>
+        <Link>HAKKINDA</Link>
+        <Link>İLETİŞİM</Link>
+      </nav>
+
       <div
         className="flex gap-x-10 justify-between items-center fixed right-0 pr-7 translate-x-full transition-all duration-300 ease-in-out"
         id="social-menu"
@@ -54,17 +66,6 @@ export default function Navbar() {
           <FaApple size={20} className="hover:scale-110 cursor-pointer" />
         </div>
       </div>
-      <nav
-        className="flex gap-x-5 text-xl font-light fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full"
-        style={{ writingMode: 'vertical-rl' }}
-        id="navbar"
-      >
-        <Link>MÜZİK</Link>
-        <Link>VİDEO</Link>
-        <Link>KONSER</Link>
-        <Link>HAKKINDA</Link>
-        <Link>İLETİŞİM</Link>
-      </nav>
     </div>
   );
 }
