@@ -33,11 +33,11 @@ export default function Navbar() {
         id="menu-burger"
       >
         <HiOutlineMenuAlt4 size={32} className="-rotate-45 hover:scale-105" />
-        <p className="text-xl font-light">MENU</p>
+        <p className=" font-light">MENU</p>
       </div>
 
       <nav
-        className="flex gap-x-5 text-xl font-light fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full"
+        className="flex gap-x-5  fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full tracking-widest"
         style={{ writingMode: 'vertical-rl' }}
         id="navbar"
       >
