@@ -10,7 +10,7 @@ export default function Video() {
         className="w-full h-full object-cover absolute"
       />
       <div className="absolute w-full h-full bg-black/40"></div>
-      <div className="absolute text-gray-500 border border-gray-500 rounded-full p-5 flex items-center justify-center cursor-pointer">
+      <div className="absolute text-white border border-white rounded-full p-5 flex items-center justify-center cursor-pointer animate-pulse">
         <FiPlay size={40} className="self-center" />
       </div>
     </div>
