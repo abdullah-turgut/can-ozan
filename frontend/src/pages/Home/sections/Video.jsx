@@ -9,8 +9,9 @@ export default function Video() {
         alt=""
         className="w-full h-full object-cover absolute"
       />
+      <div className="absolute w-full h-full bg-black/40"></div>
       <div className="absolute text-gray-500 border border-gray-500 rounded-full p-5 flex items-center justify-center cursor-pointer">
-        <FiPlay size={40} />
+        <FiPlay size={40} className="self-center" />
       </div>
     </div>
   );
