@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './sections/Hero';
 import Music from './sections/Music';
+import Video from './sections/Video';
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
       <section className="h-screen">
         <Music />
       </section>
-      <section className="h-screen">Video</section>
+      <section className="h-screen">
+        <Video />
+      </section>
       <section className="h-screen">Concerts</section>
       <section className="h-screen">Contact</section>
     </div>

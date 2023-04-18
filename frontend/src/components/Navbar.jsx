@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed flex right-5 pt-7 text-white z-10 mix-blend-difference tracking-wider">
+    <div className="fixed flex right-5 pt-7 text-white z-50 mix-blend-difference tracking-wider">
       <div
         className="cursor-pointer flex items-center gap-x-3 transition-all duration-300"
         style={{ writingMode: 'vertical-rl' }}
