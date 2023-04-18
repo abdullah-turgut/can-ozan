@@ -37,7 +37,7 @@ export default function Video() {
         id="iframe"
       >
         <iframe
-          src="https://www.youtube.com/embed/oD6fL4yyhDk?rel=0&autoplay=0"
+          src="https://www.youtube.com/embed/oD6fL4yyhDk?rel=0&autoplay=0&color=white"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
