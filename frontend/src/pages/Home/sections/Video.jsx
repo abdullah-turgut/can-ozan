@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiPlay } from 'react-icons/fi';
+import { IoIosPlay } from 'react-icons/io';
 
 export default function Video() {
   return (
@@ -11,7 +11,7 @@ export default function Video() {
       />
       <div className="absolute w-full h-full bg-black/40"></div>
       <div className="absolute text-white border border-white rounded-full p-5 flex items-center justify-center cursor-pointer animate-pulse">
-        <FiPlay size={40} className="self-center" />
+        <IoIosPlay size={40} className="self-center" />
       </div>
     </div>
   );
