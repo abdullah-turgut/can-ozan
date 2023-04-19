@@ -37,7 +37,7 @@ export default function Navbar() {
       </div>
 
       <nav
-        className="flex gap-x-5  fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full tracking-widest"
+        className="flex gap-x-5 fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full tracking-widest"
         style={{ writingMode: 'vertical-rl' }}
         id="navbar"
       >
