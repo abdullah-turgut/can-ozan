@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoIosPlay } from 'react-icons/io';
 import { IoCloseOutline } from 'react-icons/io5';
-import video from '../../../assets/videos/kalbimden_tenime.webm';
+import video from '../../../assets/videos/kalbimden_tenime.mp4';
 
 export default function Video() {
   function playVideo() {
@@ -17,14 +17,16 @@ export default function Video() {
 
   return (
     <div className="h-full w-full relative flex justify-center items-center">
-      <img />
-      <video
-        src={video}
-        className="w-full h-full object-cover absolute"
-        autoPlay
-        muted
-        loop
-      ></video>
+      <div className="w-full h-full">
+        <video
+          src={video}
+          className="w-full h-full object-cover absolute"
+          autoPlay
+          muted
+          loop
+        ></video>
+      </div>
+
       <div className="absolute w-full h-full bg-black/40"></div>
       <div
         className="absolute text-white border border-white rounded-full p-5 flex items-center justify-center cursor-pointer animate-pulse"
@@ -32,12 +34,17 @@ export default function Video() {
       >
         <IoIosPlay size={40} className="self-center" />
       </div>
+      <div className="absolute px-40 py-20 flex flex-col left-0 bottom-0 text-white ">
+        <p className="mix-blend-difference font-serif tracking-widest text-5xl">
+          Kalbimden Tenime
+        </p>
+      </div>
       <div
         className="hidden absolute h-full w-full justify-center items-center bg-black/70"
         id="iframe"
       >
         <iframe
-          src="https://www.youtube.com/embed/oD6fL4yyhDk?rel=0&autoplay=0&color=white"
+          src="https://www.youtube.com/embed/Gk-dvXm9-dc?rel=0&autoplay=0&color=white"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
