@@ -35,7 +35,7 @@ export default function Video() {
         <IoIosPlay size={40} className="self-center" />
       </div>
       <div className="absolute px-40 py-20 flex flex-col left-0 bottom-0 text-white ">
-        <p className="mix-blend-difference font-serif tracking-widest text-5xl">
+        <p className="mix-blend-difference font-[PlayfairDisplay] font-bold  text-5xl">
           Kalbimden Tenime
         </p>
       </div>
