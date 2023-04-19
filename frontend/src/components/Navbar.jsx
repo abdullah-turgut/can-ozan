@@ -27,17 +27,17 @@ export default function Navbar() {
   return (
     <div className="fixed flex right-5 pt-7 text-white z-50 mix-blend-difference tracking-wider">
       <div
-        className="cursor-pointer flex items-center gap-x-3 transition-all duration-300"
+        className="cursor-pointer text-[20px] flex items-center gap-x-3 transition-all duration-300"
         style={{ writingMode: 'vertical-rl' }}
         onClick={openMenu}
         id="menu-burger"
       >
         <HiOutlineMenuAlt4 size={32} className="-rotate-45 hover:scale-105" />
-        <p className=" font-light">MENU</p>
+        <p className="font-light">MENU</p>
       </div>
 
       <nav
-        className="flex gap-x-5 fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full tracking-widest"
+        className="flex gap-x-5 text-[20px] font-light fixed top-0 pt-20 transition-all duration-300 ease-out -translate-y-full tracking-widest"
         style={{ writingMode: 'vertical-rl' }}
         id="navbar"
       >
