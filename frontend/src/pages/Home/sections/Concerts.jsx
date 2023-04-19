@@ -4,7 +4,7 @@ import { concertsData } from '../../../mocks/concertsData';
 
 export default function Concerts() {
   return (
-    <div className="h-full py-[10%] px-[10%] flex flex-col ">
+    <div className="h-full py-[10%] px-[10%] flex flex-col overflow-hidden">
       <h3 className="font-serif text-7xl">Konser</h3>
       <div className="flex gap-x-28 justify-between mt-20">
         <div className="flex flex-col gap-y-10">
@@ -41,7 +41,7 @@ export default function Concerts() {
             ))
             .sort((a, b) => b - a)}
         </div>
-        <img src={interactive_map} alt="" className="" />
+        <img src={interactive_map} alt="" className="object-cover" />
       </div>
     </div>
   );
