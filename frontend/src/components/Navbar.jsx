@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="fixed flex right-5 pt-7 text-white z-50 mix-blend-difference tracking-wider">
+    <div className="fixed flex right-5 pt-7 z-50 text-white mix-blend-difference tracking-wider">
       <div
         className="cursor-pointer text-[20px] flex items-center gap-x-3 transition-all duration-300"
         style={{ writingMode: 'vertical-rl' }}
@@ -41,7 +41,7 @@ export default function Navbar() {
         style={{ writingMode: 'vertical-rl' }}
         id="navbar"
       >
-        <Link>MÜZİK</Link>
+        <Link to="/musics">MÜZİK</Link>
         <Link>VİDEO</Link>
         <Link>KONSER</Link>
         <Link>HAKKINDA</Link>
