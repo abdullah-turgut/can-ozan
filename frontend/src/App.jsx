@@ -49,7 +49,6 @@ function App() {
         },
       })
       .then((res) => {
-        sessionStorage.setItem(`${id}`, JSON.stringify(res.data.items));
         let data = {
           album_id: id,
           duration: Math.round(
@@ -59,7 +58,7 @@ function App() {
           ),
           tracks: res.data.items,
         };
-        console.log(data);
+        sessionStorage.setItem(`${id}`, JSON.stringify(data));
       });
   }
 

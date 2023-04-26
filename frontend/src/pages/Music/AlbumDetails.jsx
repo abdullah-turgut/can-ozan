@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { titleCase } from 'title-case';
 
-export default function AlbumDetails({ album, track }) {
+export default function AlbumDetails({ idAlbum }) {
+  const [currAlbum, setCurrAlbum] = useState(
+    JSON.parse(sessionStorage.getItem('albums')).filter(
+      (el) => el.id === idAlbum
+    )[0]
+  );
+
+  console.log(currAlbum);
   return (
     <>
-      <img
+      {/* <img
         src={album.images[0].url}
         alt="album_cover"
         className="w-1/2 rounded-3xl shadow-2xl shadow-black"
@@ -17,7 +24,7 @@ export default function AlbumDetails({ album, track }) {
           <div> dk</div>
           <a href=""></a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
