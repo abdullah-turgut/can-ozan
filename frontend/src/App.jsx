@@ -14,7 +14,6 @@ function App() {
 
   setTimeout(() => {
     setHaveData(false);
-    console.log(haveData);
   }, 1000 * 60 * 60);
 
   function getToken() {
