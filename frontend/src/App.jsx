@@ -19,8 +19,8 @@ function App() {
   function getToken() {
     let body = {
       grant_type: 'client_credentials',
-      client_id: import.meta.env.VITE_CLIENT_ID,
-      client_secret: import.meta.env.VITE_CLIENT_SECRET,
+      client_id: '23b92457510b40bbb7d850d586896de1',
+      client_secret: '1eef55beb48e456b9e4270165b69f431',
     };
     axios
       .post('https://accounts.spotify.com/api/token', body, {
