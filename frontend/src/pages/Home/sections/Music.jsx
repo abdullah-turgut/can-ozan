@@ -18,7 +18,7 @@ export default function Music({ albums, setAlbums }) {
       behavior: 'smooth',
     });
     if (indexAlbum < albums.length) {
-      setIndexAlbum((preVal) => preVal + 1);
+      setIndexAlbum((preVal) => preVal - 1);
     }
   }
 
@@ -27,7 +27,7 @@ export default function Music({ albums, setAlbums }) {
       src={album.images[0].url}
       alt=""
       className={
-        i == indexAlbum
+        i == 0
           ? 'w-[500px] h-[500px] snap-start object-cover rounded-3xl'
           : 'w-[400px] h-[400px] snap-start object-cover rounded-3xl'
       }

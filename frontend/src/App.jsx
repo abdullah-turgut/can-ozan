@@ -24,7 +24,7 @@ function App() {
     };
     axios
       .post('https://accounts.spotify.com/api/token', body, {
-        headers: { 'content-type': 'application/x-www-form-urlencoded' },
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       })
       .then((res) => {
         setToken(res.data.access_token);
