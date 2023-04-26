@@ -8,7 +8,7 @@ export default function Music({ albums, setAlbums }) {
       left: 300,
       behavior: 'smooth',
     });
-    if (indexAlbum > 0) {
+    if (indexAlbum >= 0) {
       setIndexAlbum((preVal) => preVal + 1);
     }
   }
@@ -22,8 +22,9 @@ export default function Music({ albums, setAlbums }) {
     }
   }
 
-  const listAlbums = albums.map((album, i) => (
+  let listAlbums = albums.map((album, i) => (
     <img
+      key={album.id}
       src={album.images[0].url}
       alt=""
       className={
@@ -33,13 +34,14 @@ export default function Music({ albums, setAlbums }) {
       }
     />
   ));
-  console.log(listAlbums);
+
+  console.log(indexAlbum);
 
   return (
     <div className="w-full pt-28 h-screen relative">
       <p className="px-[10%] text-5xl mb-10  font-serif font-semibold">Müzik</p>
       <div
-        className="mx-[10%] flex items-end gap-x-20 snap-x overflow-scroll scrollbar-none"
+        className="mx-[10%] flex items-end gap-x-20 snap-x overflow-scroll scrollbar-none transition-all duration-300 ease-out"
         id="album-slider"
       >
         {listAlbums}
