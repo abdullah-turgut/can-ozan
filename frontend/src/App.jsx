@@ -41,7 +41,7 @@ function App() {
       .then((res) => {
         setAlbums(res.data.items);
         setHaveData(true);
-        sessionStorage.setItem('albums', JSON.stringify(albums));
+        localStorage.setItem('albums', JSON.stringify(albums));
       });
   }
 
@@ -62,7 +62,7 @@ function App() {
           ),
           tracks: res.data.items,
         };
-        sessionStorage.setItem(`${id}`, JSON.stringify(data));
+        localStorage.setItem(`${id}`, JSON.stringify(data));
       });
   }
 
