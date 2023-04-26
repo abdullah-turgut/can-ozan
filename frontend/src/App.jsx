@@ -79,7 +79,11 @@ function App() {
       <Header />
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route
+          exact
+          path="/"
+          element={<Home albums={albums} setAlbums={setAlbums} />}
+        />
         <Route path="/musics" element={<Musics albums={albums} />} />
       </Routes>
     </div>
