@@ -71,12 +71,12 @@ function App() {
   }, [haveData]);
 
   return (
-    <div className="App">
+    <div className="App bg-[#EAEAEA]">
       <Header />
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/musics" element={<Musics />} />
+        <Route path="/musics" element={<Musics albums={albums} />} />
       </Routes>
     </div>
   );
