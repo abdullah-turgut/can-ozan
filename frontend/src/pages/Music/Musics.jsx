@@ -26,6 +26,7 @@ export default function Musics({ albums }) {
       className="w-[32%] rounded-2xl cursor-pointer hover:scale-[101%]"
       id={album.id}
       onClick={(e) => changeAlbum(e)}
+      key={album.id}
     />
   ));
 

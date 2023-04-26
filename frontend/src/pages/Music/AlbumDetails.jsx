@@ -32,7 +32,10 @@ export default function AlbumDetails({ idAlbum }) {
   }
 
   const listTracks = tracks.tracks.map((track, i) => (
-    <div className="flex justify-between border-b border-gray-400 py-4 text-lg font-semibold">
+    <div
+      key={i}
+      className="flex justify-between border-b border-gray-400 py-4 text-lg font-semibold"
+    >
       <div className="flex gap-x-4">
         <p>{i + 1}</p>
         <p>{track.name}</p>
