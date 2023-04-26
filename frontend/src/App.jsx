@@ -12,6 +12,11 @@ function App() {
   const [albums, setAlbums] = useState([]);
   const [haveData, setHaveData] = useState(false);
 
+  setTimeout(() => {
+    setHaveData(false);
+    console.log(haveData);
+  }, 1000 * 60 * 60);
+
   function getToken() {
     let body = {
       grant_type: 'client_credentials',
