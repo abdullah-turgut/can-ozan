@@ -6,20 +6,20 @@ import Concerts from './sections/Concerts';
 
 export default function Home({ albums, setAlbums }) {
   return (
-    <div className="flex flex-col bg-[#EAEAEA]">
-      <section className="h-screen ">
+    <div className="flex flex-col bg-[#EAEAEA] snap snap-y snap-mandatory">
+      <section className="h-screen snap-start">
         <Hero />
       </section>
-      <section className="h-screen">
+      <section className="h-screen snap-start">
         <Music albums={albums} setAlbums={setAlbums} />
       </section>
-      <section className="h-screen">
+      <section className="h-screen snap-start">
         <Video />
       </section>
-      <section className="h-screen">
+      <section className="h-screen snap-start">
         <Concerts />
       </section>
-      <section className="h-screen">Contact</section>
+      <section className="h-screen snap-start">Contact</section>
     </div>
   );
 }
