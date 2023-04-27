@@ -27,11 +27,14 @@ function App() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       })
       .then((res) => {
+        sessionStorage.setItem('token', JSON.stringify(res.data.access_token));
         setToken(res.data.access_token);
+        console.log(res.data.access_token);
       });
   }
 
   function getAlbums() {
+    let token = JSON.parse(sessionStorage.getItem('token'));
     axios
       .get('https://api.spotify.com/v1/artists/4MUb8ilmrxyePXwSkG31lC/albums', {
         headers: {
