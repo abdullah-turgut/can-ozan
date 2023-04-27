@@ -6,7 +6,7 @@ import AlbumDetails from './AlbumDetails';
 export default function Musics({ albums }) {
   const navigate = useNavigate();
   const [idAlbum, setIdAlbum] = useState(
-    localStorage.getItem('albums') ? '0T0BoQ0unk3MGwOrI8Eyup' : null
+    sessionStorage.getItem('albums') ? '0T0BoQ0unk3MGwOrI8Eyup' : null
   );
 
   useEffect(() => {

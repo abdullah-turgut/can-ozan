@@ -44,11 +44,12 @@ function App() {
       .then((res) => {
         setAlbums(res.data.items);
         setHaveData(true);
-        localStorage.setItem('albums', JSON.stringify(albums));
+        sessionStorage.setItem('albums', JSON.stringify(albums));
       });
   }
 
   function getTracks(id) {
+    let token = JSON.parse(sessionStorage.getItem('token'));
     axios
       .get(`https://api.spotify.com/v1/albums/${id}/tracks`, {
         headers: {
@@ -65,7 +66,7 @@ function App() {
           ),
           tracks: res.data.items,
         };
-        localStorage.setItem(`${id}`, JSON.stringify(data));
+        sessionStorage.setItem(`${id}`, JSON.stringify(data));
       });
   }
 
