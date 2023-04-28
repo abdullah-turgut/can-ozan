@@ -33,7 +33,7 @@ export default function Musics({ albums }) {
   return (
     <main className="px-32 py-36 border bg-[#EAEAEA] w-full max-w-[1440px] mx-auto min-h-screen flex flex-col">
       <p className="font-serif text-6xl font-medium">Müzik</p>
-      <div className="flex gap-x-24 items-end mt-24">
+      <div className="flex gap-x-24 items-start mt-24">
         {idAlbum && <AlbumDetails idAlbum={idAlbum} />}
       </div>
       <div className="flex flex-wrap gap-x-[2%] gap-y-4 mt-52">
