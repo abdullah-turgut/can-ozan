@@ -70,8 +70,11 @@ function App() {
       });
   }
 
-  useEffect(() => {
+  setTimeout(() => {
     getToken();
+  }, 1000 * 60 * 60);
+
+  useEffect(() => {
     getAlbums();
     albums.map((el) => {
       getTracks(el.id);
